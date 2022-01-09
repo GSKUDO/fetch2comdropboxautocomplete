@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clientes</title>
+        <meta charset="utf-8" lang="pt-br">
+    </head>
+    <body>
+        <h1>Buscar Cliente:</h1>
+            <br>
+            <form>
+                <label for="busca">Busca:</label><br>
+                <input type="text" id="campogenerico" placeholder="Digite sua busca:"/>
+                <table id="tblistasugerida">
+                    <tbody></tbody>
+                </table>
+                </div>
+                <br>
+                <select name="opcoes" onchange="changeFunc(value);">
+                    <option value="none" selected>  </option>
+                    <option value="id">ID</option>
+                    <option value="name">Nome</option>
+                    <option value="email">Email</option>
+                </select> 
+                <input type="button" value="Buscar" onclick="executar()">
+                <input type="reset" value="Reset">
+            </form>
+        <br>
+            
+        <h1>Cliente:</h1>
+            
+        <p id="mensagemerro"></p>
+            
+        <table id="tblista">
+            <thead>
+                <tr>
+                    <th>Indice</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script src="buscacliente.js"></script>
+    </body>
+</html>
+
