@@ -9,7 +9,12 @@ function changeFunc($i) {
 }
 
 // deixa o campo de texto em stand by, se digitar algo ele roda 
-document.getElementById("campogenerico").addEventListener("keyup", mostraautocomplete);
+document.getElementById("campogenerico").addEventListener("keyup", await);
+
+// segura a execução em 2 segundos 
+function await() {
+    const myTimeout = setTimeout(mostraautocomplete, 2000);  
+}
 
 // mostra o autocomplete do campo texto 
 function mostraautocomplete() {
